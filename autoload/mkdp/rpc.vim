@@ -150,6 +150,7 @@ function! mkdp#rpc#preview_close() abort
       call rpcnotify(g:mkdp_node_channel_id, 'close_page', { 'bufnr': bufnr('%') })
     endif
   endif
+  let b:MarkdownPreviewToggleBool = 0
   call mkdp#autocmd#clear_buf()
 endfunction
 
