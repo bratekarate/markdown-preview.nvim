@@ -119,6 +119,7 @@ function! mkdp#rpc#stop_server() abort
     let s:mkdp_channel_id = -1
     let g:mkdp_node_channel_id = -1
   endif
+  let b:MarkdownPreviewToggleBool = 0
 endfunction
 
 function! mkdp#rpc#get_server_status() abort
